@@ -2,9 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Uso de Apis Externas.</title>
+    <title>Manejo de Objetos JSON</title>
+    <script type="text/javascript" src="funciones.js"></script>
 </head>
 <body>
 
+<input type="button" value="SHOW DATA" onclick="cargarDatos()"><br><br>
+<!--SE CREA LA CABECERA DE LA TABLA-->
+<table id="tablaDatosPersonalesCabecera" class="dat">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>NOMBRE</th>
+        <th>APELLIDO</th>
+        <th>EMAIL</th>
+        <th>GENERO</th>
+        <th>IMAGEN</th>
+    </tr>
+    </thead>
+    <tbody id="tablaDatosPersonalesDetalles">
+    </tbody>
+</table>
 </body>
 </html>
