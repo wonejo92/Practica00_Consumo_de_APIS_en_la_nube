@@ -7,3 +7,6 @@ body{
     height: 180px;
     background: #e5cba2;
 }
+input.id,.name   {
+    text-align: center;
+}
