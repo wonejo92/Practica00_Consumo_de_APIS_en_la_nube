@@ -8,14 +8,28 @@
     <link rel="stylesheet" type="text/css" href="style.css" >
 </head>
 <body>
-<input type="button" value="SEARCH" onclick="cargarDatos()"><br><br>
+    <header class="banner">
+        <img src="image/banbanner1.jpg" width="100%" height="100%" >
+    </header>
+        <br>
+    <!--Buttons for Search by NAME.-->
+    <div class="search_by_name">
+        <h1>SEARCH</h1>
+        <label>NAME MOVIE:</label>
+        <input class="name" type="text" placeholder="Spiderman">
+        <label>ID MOVIE</label>
+        <input type="button" value="SEARCH" onclick="cargarDatos()">
+    </div>
+    <!--Buttons for search by ID.-->
+
+
 <!--SE CREA LA CABECERA DE LA TABLA-->
 <table id="tablaDatosPersonalesCabecera" class="dat">
     <thead>
     <tr>
         <th>ID</th>
         <th>NOMBRE</th>
-        <th>APELLIDO</th>
+        <th>APELLIDO</th
         <th>EMAIL</th>
         <th>GENERO</th>
         <th>IMAGEN</th>
