@@ -1,8 +1,8 @@
 var datos;
 function LoadMovie(name) {
-console.log(name.value)
+//console.log("Supelicula es"+ name.value)
     var detalles ="";
-    $.get("https://www.omdbapi.com/?apikey=8c504a5c&s=Doraemon&plot=full", function (rawdatos)  {
+    $.get("https://www.omdbapi.com/?apikey=8c504a5c&s=Doraemon&plot=full", function (rawdatos) {
         var rawstring = JSON.stringify(rawdatos);
         datos = JSON.parse(rawstring);
         console.log(datos);
