@@ -16,14 +16,28 @@
     <!--Buttons for Search by NAME.-->
     <div class="search_by_name">
         <h1>SEARCH</h1>
-        <label>NAME MOVIE: </label >
-        <input class="name" type="text" placeholder="Spiderman">
-        <label>ID MOVIE: </label>
-        <input class="id" type="text" placeholder="tt2705436">
-        <input type="button" value="SEARCH" onclick="LoadMovie()"><br>
+        <form id="Formulario" method="get">
+            <label>NAME MOVIE: </label >
+            <input class="name" type="text" placeholder="Spiderman" name="NameMovie" id="NameMovie">
+            <label>ID MOVIE: </label>
+            <input class="id" type="text" placeholder="tt2705436">
+            <input type="button"  value="SEARCH" onclick="LoadMovie(document.getElementById('NameMovie'))"><br>
+        </form>
+
     </div>
     <div id="peliculas">
-        <h1>HOLA MUNDO</h1>
+        <table id="TablaPeliculas" class="dat" >
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Year</th>
+                    <th>imdbID</th>
+                    <th>Type</th>
+                    <th>Poster</th>
+                </tr>
+            </thead>
+            <tbody id="DetallesPeliculas"></tbody>
+        </table>
     </div>
     <!--Buttons for search by ID.-->
 </body>

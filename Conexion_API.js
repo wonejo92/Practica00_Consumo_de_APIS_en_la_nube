@@ -1,7 +1,8 @@
 var datos;
-function LoadMovie() {
+function LoadMovie(name) {
+console.log(name.value)
     var detalles ="";
-    $.get("https://www.omdbapi.com/?apikey=8c504a5c&s=Batman&plot=full", function (rawdatos)  {
+    $.get("https://www.omdbapi.com/?apikey=8c504a5c&s=Doraemon&plot=full", function (rawdatos)  {
         var rawstring = JSON.stringify(rawdatos);
         datos = JSON.parse(rawstring);
         console.log(datos);
@@ -14,6 +15,6 @@ function LoadMovie() {
                 "<td><img src=" + datos.Search[i].Poster + "></td>" +
                 "</tr>";
         }
-        document.getElementById("peliculas").innerHTML = detalles
+        document.getElementById("DetallesPeliculas").innerHTML = detalles
     })
 }
