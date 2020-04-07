@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OMDb API</title>
-    <script type="text/javascript" src="funciones.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="Conexion_API.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css" >
 </head>
 <body>
@@ -19,25 +20,11 @@
         <input class="name" type="text" placeholder="Spiderman">
         <label>ID MOVIE: </label>
         <input class="id" type="text" placeholder="tt2705436">
-        <input type="button" value="SEARCH" onclick="cargarDatos()">
+        <input type="button" value="SEARCH" onclick="LoadMovie()"><br>
+    </div>
+    <div id="peliculas">
+        <h1>HOLA MUNDO</h1>
     </div>
     <!--Buttons for search by ID.-->
-
-
-<!--SE CREA LA CABECERA DE LA TABLA-->
-<table id="tablaDatosPersonalesCabecera" class="dat">
-    <thead>
-    <tr>
-        <th>ID</th>
-        <th>NOMBRE</th>
-        <th>APELLIDO</th
-        <th>EMAIL</th>
-        <th>GENERO</th>
-        <th>IMAGEN</th>
-    </tr>
-    </thead>
-    <tbody id="tablaDatosPersonalesDetalles">
-    </tbody>
-</table>
 </body>
 </html>
