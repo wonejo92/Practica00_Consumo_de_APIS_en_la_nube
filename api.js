@@ -20,7 +20,7 @@ if (titulo ==""){
                     "<td>"+ movie.Year + "</td>" +
                     "<td>"+ movie.imdbID + "</td>" +
                     "<td>"+ movie.Type + "</td>" +
-                    "<td><img src="+ movie.Poster + " style='width:150px;height:100px;'></td>" +
+                    "<td><img src="+ movie.Poster + " style='width:150px;height:200px;'></td>" +
                     "</tr>"
             });
             document.getElementById("DetallesPeliculas").innerHTML = detalles;
