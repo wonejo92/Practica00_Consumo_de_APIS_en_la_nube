@@ -5,7 +5,7 @@ table{
 }
 th,td{
     border: solid 1px black;
-    padding: 10px;
+    padding: 5px;
 }
 thead{
     background-color: #246355;
