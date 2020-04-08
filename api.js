@@ -9,6 +9,7 @@ if (titulo ==""){
     }else {
         xmlhttp =new ActiveXObject("Microsoft.XMLHTTP");
     }
+
         xmlhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200){
             var data = JSON.parse(this.responseText)
@@ -19,7 +20,7 @@ if (titulo ==""){
                     "<td>"+ movie.Year + "</td>" +
                     "<td>"+ movie.imdbID + "</td>" +
                     "<td>"+ movie.Type + "</td>" +
-                    "<td><img src="+ movie.Poster + "></td>" +
+                    "<td><img src="+ movie.Poster + " style='width:150px;height:250px;'></td>" +
                     "</tr>"
             });
             document.getElementById("DetallesPeliculas").innerHTML = detalles;
