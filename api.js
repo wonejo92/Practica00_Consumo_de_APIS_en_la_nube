@@ -27,7 +27,7 @@ if (titulo ==""){
                     "<td>"+ movie.imdbID + "</td>" +
                     "<td>"+ movie.Type + "</td>" +
                     "<td><img src="+ movie.Poster + " style='width:200px;height:200px;'></td>" +
-                    "<td><input type='button' value='mas info' id="+movie.imdbID+" onclick=BuscarPeliculaID(this.id)></td>" +
+                    "<td><input type='button' value='More Details' id="+movie.imdbID+" onclick=BuscarPeliculaID(this.id)></td>" +
                     "</tr>";
             });
             document.getElementById("DetallesPeliculas").innerHTML = detalles;
@@ -67,6 +67,7 @@ function BuscarPeliculaID(id){
                 "</tr>"
 
             }
+
             document.getElementById("detallesId").innerHTML=detalles;
 
         };
