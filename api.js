@@ -1,13 +1,11 @@
 var paginas_totales=0;
 var pagina_actual=1;
 var nombre_pelicula = "";
-
 function BuscarPelicula(){
     nombre_pelicula = document.getElementById('titulo').value;
     let url = 'https://www.omdbapi.com/?apikey=8c504a5c&s='+ nombre_pelicula;
     metodoAJAX(url);
 }
-
 function metodoAJAX(url) {
     $(document).ready( function () {
         $('#TablaPeliculas').DataTable();
