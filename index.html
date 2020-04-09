@@ -21,11 +21,10 @@
     <div class="search_by_name">
         <h1>SEARCH</h1>
         <label>NAME MOVIE:</label>
-        <input type="text" value="" id="titulo"> <br><br>
-        <input type="button" value="SHOW DATA" onclick="BuscarPelicula()">
+        <input type="text" value="" id="titulo">
+        <input type="button" value="SHOW DATA" onclick="BuscarPelicula()"> <br><br>
     </div>
     <div id="peliculas">
-        <h1>PELICULAS</h1>
         <table id="TablaPeliculas" class="dat" >
             <thead>
                 <tr>
@@ -41,11 +40,12 @@
         </table>
         <div>
 
-            <input type="button" value="Primera pelicula" style="width: 120px "  onclick="PrimeraPelicula()"  >
-            <input type="button" value="Avansar Pelicula" style="width: 120px" onclick="AvanzarPelicula()">
-            <input type="button" value="Retroceder Pelicula" style="width: 120px" onclick="RetrocederPelicula()">
-            <input type="button" value="Ultima Pelicula" style="width: 120px" onclick="UltimaPelicula()">
+            <input type="button" value="First Page" style="width: 120px "  onclick="PrimeraPelicula()"  >
+            <input type="button" value="Next Page" style="width: 120px" onclick="AvanzarPelicula()">
+            <input type="button" value="Previous Page" style="width: 120px" onclick="RetrocederPelicula()">
+            <input type="button" value="Last Page" style="width: 120px" onclick="UltimaPelicula()">
         </div>
+        <br><br>
 
         <script src="https://code.jquery.com/jquery-3.4.1.js"
                 integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
@@ -58,10 +58,11 @@
         </script>
     </div>
     <!--Espacio para  el resto de informacion de la pelicula-->
-<div id="detallesId">
+<div id="detallesId" class="detallesId">
     <br>
     <br>
     <h1>Movie information according to the ID:</h1>
 </div>
 </body>
+
 </html>

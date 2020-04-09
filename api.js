@@ -98,7 +98,6 @@ function BuscarPeliculaID(id){
                 "</tr>"
 
             }
-
             document.getElementById("detallesId").innerHTML=detalles;
 
         };
