@@ -1,23 +1,25 @@
 
-1. Identificar gráficamente la arquitectura y el patrón de diseño de la aplicación a desarrollar.
+1. Identificar grÃ¡ficamente la arquitectura y el patrÃ³n de diseÃ±o de la aplicaciÃ³n a desarrollar.
+[
+![Microsoft Edge 4_9_2020 11_52_44 AM](https://user-images.githubusercontent.com/46872883/78920270-c213a700-7a58-11ea-9c03-abdf797a7851.png)
 
 
 
-2. Crear un repositorio en GitHub con el nombre “Practica00 – Consumo de APIs en la nube”.
+2. Crear un repositorio en GitHub con el nombre â€œPractica00 â€“ Consumo de APIs en la nubeâ€.
 
-3. Desarrollar una aplicación con HTML + CSS + Javascript + Web Services para buscar películas y toda su información de la base de datos de OMDb.  
+3. Desarrollar una aplicaciÃ³n con HTML + CSS + Javascript + Web Services para buscar pelÃ­culas y toda su informaciÃ³n de la base de datos de OMDb.  
 
-4. Desarrollar una aplicación con HTML + CSS + Javascript + Web Services para buscar películas y toda su información de la base de datos de OMDb.  
-
-
-
-
-- La aplicación Web debe permitir buscar la información de las películas tanto por el nombre (listado) como por el código (id) de cada película
+4. Desarrollar una aplicaciÃ³n con HTML + CSS + Javascript + Web Services para buscar pelÃ­culas y toda su informaciÃ³n de la base de datos de OMDb.  
 
 
 
 
-- También, la aplicación deberá presentar un máximo de 10 películas por búsqueda. Es decir, si la búsqueda retorna más de 10 películas se deberá paginar los resultados
+- La aplicaciÃ³n Web debe permitir buscar la informaciÃ³n de las pelÃ­culas tanto por el nombre (listado) como por el cÃ³digo (id) de cada pelÃ­cula
+
+
+
+
+- TambiÃ©n, la aplicaciÃ³n deberÃ¡ presentar un mÃ¡ximo de 10 pelÃ­culas por bÃºsqueda. Es decir, si la bÃºsqueda retorna mÃ¡s de 10 pelÃ­culas se deberÃ¡ paginar los resultados
 
 
 
