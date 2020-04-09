@@ -1,4 +1,14 @@
-function BuscarPelicula() {
+var paginas_totales=0;
+var pagina_actual=1;
+var nombre_pelicula = "";
+
+function BuscarPelicula(){
+    nombre_pelicula = document.getElementById('titulo').value;
+    let url = 'https://www.omdbapi.com/?apikey=8c504a5c&s='+ nombre_pelicula;
+    metodoAJAX(url);
+}
+
+function metodoAJAX(url) {
     $(document).ready( function () {
         $('#TablaPeliculas').DataTable();
     } );
@@ -16,6 +26,10 @@ if (titulo ==""){
         xmlhttp.onreadystatechange = function () {
         if (this.readyState == 4 && this.status == 200){
             var data = JSON.parse(this.responseText)
+            paginas_totales = data.totalResults;
+            paginas_totales /= 10;
+            paginas_totales = Math.ceil(paginas_totales);
+
             console.log(data)
             data.Search.forEach(movie =>{
                 detalles += "<tr>" +
@@ -30,10 +44,30 @@ if (titulo ==""){
             document.getElementById("DetallesPeliculas").innerHTML = detalles;
         }
         }
-    xmlhttp.open("GET","https://www.omdbapi.com/?apikey=8c504a5c&s=" + titulo +"&plot=full", true);
+    xmlhttp.open("GET",url, true);
     xmlhttp.send();
 }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 function BuscarPeliculaID(id){
     var detalles="";
     if (id==""){
@@ -71,4 +105,22 @@ function BuscarPeliculaID(id){
         xmlhttp.open("GET","http://www.omdbapi.com/?apikey=335d2c95&i="+ id +"&plot=full",true);
         xmlhttp.send();
     }
+}
+function PrimeraPelicula() {
+    let url = 'https://www.omdbapi.com/?apikey=8c504a5c&s='+ nombre_pelicula + '&page='+1;
+    metodoAJAX(url);
+}
+function UltimaPelicula() {
+    let url = 'https://www.omdbapi.com/?apikey=8c504a5c&s='+ nombre_pelicula + '&page='+ paginas_totales;
+    metodoAJAX(url);
+}
+function AvanzarPelicula() {
+    pagina_actual = parseInt(pagina_actual)+1;
+    let url = 'https://www.omdbapi.com/?apikey=8c504a5c&s='+ nombre_pelicula + '&page='+ pagina_actual;
+    metodoAJAX(url);
+}
+function RetrocederPelicula() {
+    pagina_actual = parseInt(pagina_actual)-1;
+    let url = 'https://www.omdbapi.com/?apikey=8c504a5c&s='+ nombre_pelicula + '&page='+ pagina_actual;
+    metodoAJAX(url);
 }

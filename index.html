@@ -7,18 +7,9 @@
     <script type="text/javascript" src="api.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css" >
     <link rel="stylesheet" type="text/css" href="tabla.css" >
-    <!--JQUERY PARA LA PAGINACION
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    -->
+
     <!--ESTILO PARA LA PAGINACION-->
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
-
-    <!--DISEÑO DE LA PAGINACION-
-    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
-    -->
-    <script type="text/javascript" src="Paginacion.js"></script>
-
-
 </head>
 <body>
     <!--Banner de la pagina Web-->
@@ -48,6 +39,14 @@
             </thead>
             <tbody id="DetallesPeliculas"></tbody>
         </table>
+        <div>
+
+            <input type="button" value="Primera pelicula" style="width: 120px "  onclick="PrimeraPelicula()"  >
+            <input type="button" value="Avansar Pelicula" style="width: 120px" onclick="AvanzarPelicula()">
+            <input type="button" value="Retroceder Pelicula" style="width: 120px" onclick="RetrocederPelicula()">
+            <input type="button" value="Ultima Pelicula" style="width: 120px" onclick="UltimaPelicula()">
+        </div>
+
         <script src="https://code.jquery.com/jquery-3.4.1.js"
                 integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
         </script>
