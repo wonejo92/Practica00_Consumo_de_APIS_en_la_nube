@@ -16,7 +16,7 @@
 
 4. Desarrollar una aplicación con HTML + CSS + Javascript + Web Services para buscar películas y toda su información de la base de datos de OMDb.  
 
-
+![Microsoft Edge 4_9_2020 12_00_45 PM](https://user-images.githubusercontent.com/46872883/78920973-d60bd880-7a59-11ea-9824-a9c2051e172e.png)
 
 
 - La aplicación Web debe permitir buscar la información de las películas tanto por el nombre (listado) como por el código (id) de cada película
