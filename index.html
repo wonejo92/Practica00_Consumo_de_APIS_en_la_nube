@@ -7,14 +7,15 @@
     <script type="text/javascript" src="api.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css" >
     <link rel="stylesheet" type="text/css" href="tabla.css" >
-    <!--JQUERY PARA LA PAGINACION-->
+    <!--JQUERY PARA LA PAGINACION
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
+    -->
     <!--ESTILO PARA LA PAGINACION-->
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.css">
 
-    <!--DISEÑO DE LA PAGINACION-->
+    <!--DISEÑO DE LA PAGINACION-
     <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.js"></script>
+    -->
     <script type="text/javascript" src="Paginacion.js"></script>
 
 
@@ -30,8 +31,7 @@
         <h1>SEARCH</h1>
         <label>NAME MOVIE:</label>
         <input type="text" value="" id="titulo"> <br><br>
-        <input type="button" value="SHOW DATA" onclick="BuscarPelicula(),CrearPaginacion()">
-
+        <input type="button" value="SHOW DATA" onclick="BuscarPelicula()">
     </div>
     <div id="peliculas">
         <h1>PELICULAS</h1>
@@ -48,6 +48,15 @@
             </thead>
             <tbody id="DetallesPeliculas"></tbody>
         </table>
+        <script src="https://code.jquery.com/jquery-3.4.1.js"
+                integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+        <script>
+            $(document).ready( function () {
+                $('#TablaPeliculas').DataTable();
+            } );
+        </script>
     </div>
     <!--Espacio para  el resto de informacion de la pelicula-->
 <div id="detallesId">

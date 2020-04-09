@@ -1,7 +1,4 @@
 function BuscarPelicula() {
-    var texto = "hola mi perro todo bien ";
-    console.log(texto)
-    document.getElementById("detallesId").innerHTML = texto;
     $(document).ready( function () {
         $('#TablaPeliculas').DataTable();
     } );
