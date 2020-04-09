@@ -7,6 +7,9 @@
 
 2. Crear un repositorio en GitHub con el nombre “Practica00 – Consumo de APIs en la nube”.
 
+![Microsoft Edge 4_9_2020 11_57_25 AM](https://user-images.githubusercontent.com/46872883/78920666-5a119080-7a59-11ea-854c-d028f9eb2cbe.png)
+
+
 3. Desarrollar una aplicación con HTML + CSS + Javascript + Web Services para buscar películas y toda su información de la base de datos de OMDb.  
 
 4. Desarrollar una aplicación con HTML + CSS + Javascript + Web Services para buscar películas y toda su información de la base de datos de OMDb.  
